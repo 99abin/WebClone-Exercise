@@ -31,16 +31,15 @@ nav {
 .nav-items {
     display : flex;
     justify-content : space-between;
-    border-bottom: 0.3rem solid #1d232b;
 } 
 
 nav img{
     height : 45px;
+    padding-right: 0.5rem;
 }
 
 .nav-items li {
-    border: 5px solid #1d232b;
-    padding : 1.1rem 0rem;
+    padding : 1.2rem 0.3rem;
 }
 
 .nav-items li a{
@@ -50,10 +49,10 @@ nav img{
     border-radius: 3px;
 }
 
-/* nav .current {
-    border-bottom : 5px solid #d7a100;
+nav .current {
+    border-bottom : 0.25rem solid #d7a100;
 
-} */
+}
 
 .dropdown1 {
     width : 100%;
