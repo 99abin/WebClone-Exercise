@@ -30,27 +30,69 @@ nav {
 
 .nav-items {
     display : flex;
-
     justify-content : space-between;
+    border-bottom: 0.3rem solid #1d232b;
 } 
 
 nav img{
-    height : 50px;
+    height : 45px;
 }
 
-nav a{
+.nav-items li {
+    border: 5px solid #1d232b;
+    padding : 1.1rem 0rem;
+}
+
+.nav-items li a{
     color : white;
-    padding : 1.5rem 1rem;
+    padding : 1rem 0.5rem;
     text-decoration: none;
-    border-bottom: 5px solid #1d232b;
+    border-radius: 3px;
 }
 
-nav .current {
+/* nav .current {
     border-bottom : 5px solid #d7a100;
+
+} */
+
+.dropdown1 {
+    width : 100%;
+    background-color :#1d232b;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    gap : 1.5rem;
+    border-radius: 10px;
+    outline: 1px solid #6d6d6d;
+    margin: 2.5rem 0rem 0rem;
+    width: 16rem;
+    border : 0.5rem solid #1d232b;
+    padding : 0.5rem 0;
 }
 
-nav a:hover{
-    border-bottom : 5px solid #d7a100;
+.dropdown1 li {
+    display: block;
+    margin : 0rem 0rem;
+    padding : 0;
+}
+
+.dropdown1 li a {
+    color: white;
+    border-radius: 5px;
+    padding : 0.5rem;
+}
+
+.dropdown1 li a:hover{
+    background-color: #6d6d6d;
+}
+
+li:hover .dropdown1 {  
+    display: flex; 
+}
+
+.nav-items li a:hover{
+    background-color: #6d6d6d;
 }
 
 /* -----MAIN 1----- */
@@ -248,7 +290,7 @@ nav a:hover{
     gap : 1.8rem;
 }
 
-.f4 li:hover {
+.foot-flex li:hover, .foot-flex2 li:hover {
     text-decoration: underline;
 }
 
