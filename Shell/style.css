@@ -22,7 +22,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding : 0px 5rem;
+    padding : 0.3rem 5rem 0;
     background-color: #1d232b;
     font-size : 0.8rem;
 }
@@ -120,17 +120,49 @@ li:hover .dropdown1 {
     border-radius: 20px;
 }
 
-.second-image {
-    display : flex;
-    justify-content : space-between;
+.sect2 {
+    display: flex;
+    justify-content: space-between;
     gap: 1.3rem;
 }
 
-.sect2 img {
-    width : 33%;
-    height : 27rem;
-    object-fit: cover;
+.card {
+    overflow: hidden;
     border-radius: 20px;
+    background: #14191f;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek shadow untuk card */
+    flex: 1; /* Membuat card memiliki lebar yang sama */
+    display: flex;
+    flex-direction: column; /* Susun elemen vertikal */
+    transition: transform 0.3s ease; /* Animasi hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efek hover */
+}
+
+.sect2 img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0; /* Hanya bulatkan bagian atas */
+}
+
+.card-content {
+
+    flex-grow: 1; /* Agar konten mengisi sisa space */
+}
+
+.card-content h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card-content p {
+    margin-bottom: 0;
+    color: #666;
+    line-height: 1.5;
 }
 
 /* -----MAIN 2----- */
