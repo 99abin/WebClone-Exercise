@@ -25,6 +25,7 @@ nav {
     padding : 0.3rem 5rem 0;
     background-color: #1d232b;
     font-size : 0.8rem;
+    position: relative;
 }
 
 
@@ -38,8 +39,9 @@ nav img{
     padding-right: 0.5rem;
 }
 
-.nav-items li {
+.nav-items > li {
     padding : 1.2rem 0.3rem;
+    position: relative;
 }
 
 .nav-items li a{
@@ -86,9 +88,9 @@ nav .current {
     background-color: #6d6d6d;
 }
 
-li:hover .dropdown1 {  
+/* li:hover .dropdown1 {  
     display: flex; 
-}
+} */
 
 .nav-items li a:hover{
     background-color: #6d6d6d;
