@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shell Clone</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,9 +14,9 @@
     <nav>
         <div class="logo"><img src="image/Shell-Logo.png" alt="shell logo"></div>
         <ul class="nav-items">
-            <li class="current"><a href="#">Home</a></li>
-            <li><a class="Wwa" href="#">Who we are</a>
-                <ul class="dropdown1 ">
+            <li class="current"><a onclick="button1">Home</a></li>
+            <li><a id="whoWeAreBtn" class="Wwa" href="#">Who we are</a>
+                <ul id="whoWeAreDropdown" class="dropdown1 ">
                     <li><a href="#"><b>Go to: Who we are</b></a></li>
                     <li><a href="#">Shell at a glance</a></li>
                     <li><a href="#">Leadership</a></li>
