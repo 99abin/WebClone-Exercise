@@ -134,12 +134,13 @@ nav .current {
     background: #14191f;
     display: flex;
     flex-direction: column; 
-    transition: transform 0.3s ease; 
+    transition: transform 0.5s ease;
     flex : 1;
 }
 
 .card1:hover {
     transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .sect2 img {
@@ -168,7 +169,7 @@ nav .current {
 .card-content p {
     margin-bottom: 0;
     color: #ffffff;
-    line-height: 1.5;
+    line-height: 1.5rem;
     font-size: 0.85rem;
 }
 
@@ -182,27 +183,63 @@ nav .current {
     padding : 2rem 5rem;
 }
 
-.sect3 h2 {
+.sect3 > h2 {
     color : white;
     text-align: center;
-    padding : 2.5rem;
+    padding : 2.5rem 0;
     font-size: 1.8rem;
 }
 
-.third-image {
-    display : flex;
-    align-items: center;
-    gap : 1.3rem;
+.card-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap : 1.5rem;
 }
 
-.third-image img {
-    width : 25%;
-    height: 20rem;
-    object-fit: cover;
+.card2 {
+    display: flex;
+    flex-direction: column;
+    color : white;
     border-radius: 20px;
+    overflow: hidden;
+    height: 23rem;
+    flex : 1;
+    transition: transform 0.3s ease;
+}
+
+.card2 > img {
+    width: 100%;
+    min-width: 0;
+    height : 11.5rem;
+    object-fit: cover;
+}
+
+.card2 > .card-content2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #1d232b;
+    height: 11.5rem;
+    padding: 1.5rem;
+}
+
+.card-content2 > h2 {
+    text-align: left;
+}
+
+.card-content2 > p {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+}
+
+.card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 /* -----MAIN 3----- */
+
 .hero3 {
     background-color: #1d232b;
     padding : 2.5rem 5rem 3rem;
@@ -274,13 +311,13 @@ nav .current {
     font-size: 0.9rem;
 }
 
-.card2 {
+.card3 {
     display : grid;
     grid-template-columns: repeat(3, 1fr);
     gap : 1.5rem;
 }
 
-.card2 img{ 
+.card3 img{ 
     width : 100%;
     height : 20rem;
     object-fit: cover;
