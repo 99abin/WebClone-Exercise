@@ -173,6 +173,10 @@ nav .current {
     font-size: 0.85rem;
 }
 
+.card-content > .rm {
+    text-align: right;
+}
+
 /* -----MAIN 2----- */
 
 .hero2 {
@@ -222,6 +226,7 @@ nav .current {
     background-color: #1d232b;
     height: 11.5rem;
     padding: 1.5rem;
+    color: white;
 }
 
 .card-content2 > h2 {
@@ -236,6 +241,10 @@ nav .current {
 .card2:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card-content2 > .rm2 {
+    text-align: right;
 }
 
 /* -----MAIN 3----- */
